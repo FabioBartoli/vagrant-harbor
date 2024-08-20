@@ -21,6 +21,12 @@ Você também pode criar uma entrada no seu arquivo de hosts da máquina local (
 Acessando no navegador:
 ![GUI](./images/gui.png)
 
+Para conseguir fazer login no Docker e enviar as imagens para o Harbor, também será necessário adicionar o seu registro DNS criado como um "insecure-registry" da sua máquina local, conforme a imagem mostra:
+![Insecure](./images/insec.png)
+
+Não esqueça de executar em sua máquina local os comandos "sudo systemctl daemon-reload" e "sudo systemctl restart docker" após adicionar o arquivo para permitir o login do repo inseguro.
+
 ##
 Projeto desenvolvido como parte do treinamento [PISC - Programa Intensivo em Segurança Cloud Native](https://www.linuxtips.io/pisc-programa-intensivo-em-segurana-cloud-native-2)
 Qualquer dúvida ou sugestão, entre em contato! [@Fabiobartoli](https://t.me/FabioBartoli)
+
